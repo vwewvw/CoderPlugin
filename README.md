@@ -19,7 +19,7 @@
 - Подсчёт количества строк в файле.
 - Получение информации о количестве строк в исходном коде.
 
-![Line Counter](screenshots/line-counter.png)
+![Line Counter](screenshots/line_counter.jpeg)
 
 ### 2. Генератор шуток (Joke Generator)
 
@@ -32,7 +32,7 @@
 - Использование безопасного режима API и фильтрации нежелательного контента.
 - Запуск генератора через команду или кнопку в строке состояния.
 
-![Joke Generator](screenshots/joke-generator.png)
+![Joke Generator](screenshots/joke_generator.jpg)
 
 ### 3. Викторина по Git (Git Master)
 
@@ -48,7 +48,7 @@
 - Отображение итогового результата.
 - Возможность пройти викторину повторно.
 
-![Git Master](screenshots/git-master.png)
+![Git Master](screenshots/quiz.jpg)
 
 ## Требования
 
@@ -117,15 +117,17 @@
 
 ### Начальный этап
 
-![Начало разработки](screenshots/board-start.png)
+![Начало разработки](screenshots/fiirst.jpeg)
+![Начало разработки](screenshots/first.jpeg)
 
 ### Промежуточный этап
 
-![Промежуточный этап разработки](screenshots/board-middle.png)
+![Промежуточный этап разработки](screenshots/line_counter.jpeg)
+![Промежуточный этап разработки](screenshots/joke_generator.jpg)
 
 ### Завершение разработки
 
-![Завершение разработки](screenshots/board-final.png)
+![Завершение разработки](screenshots/quiz.jpg))
 
 ## Репозиторий проекта
 
