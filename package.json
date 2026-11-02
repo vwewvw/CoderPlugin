@@ -15,12 +15,16 @@
     "commands": [
       { "command": "vibecoder.hello", "title": "Hello World", "icon": "$(smiley)" },
       { "command": "vibecoder.contextAction", "title": "Команда из меню" },
-      { "command": "vibecoder.countLines", "title": "Подсчитать строки", "icon": "$(list-unordered)" }
+      { "command": "vibecoder.countLines", "title": "Подсчитать строки", "icon": "$(list-unordered)" },
+      { "command": "jokeGenerator.getJoke", "title": "Случайная шутка", "icon": "$(smiley)" },
+      { "command": "gitMaster.startQuiz", "title": "Викторина по Git", "icon": "$(git-branch)" }
     ],
     "menus": {
       "editor/title": [
         { "command": "vibecoder.hello", "group": "navigation" },
-        { "command": "vibecoder.countLines", "group": "navigation" }
+        { "command": "vibecoder.countLines", "group": "navigation" },
+        { "command": "jokeGenerator.getJoke", "group": "navigation" },
+        { "command": "gitMaster.startQuiz", "group": "navigation" }
       ],
       "editor/context": [
         { "command": "vibecoder.contextAction", "group": "navigation" }
