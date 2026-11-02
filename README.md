@@ -1,71 +1,132 @@
-# vibecoderplugin README
+# CoderPlugin
 
-This is the README for your extension "vibecoderplugin". After writing up a brief description, we recommend including the following sections.
+Расширение для Visual Studio Code, объединяющее несколько инструментов для разработчиков. Проект включает три плагина, которые упрощают работу с кодом и делают процесс программирования интереснее.
 
-## Features
+## Авторы
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Попова Руслана — группа M3123
+- Пермина Мария — группа M3123
 
-For example if there is an image subfolder under your extension project workspace:
+## Функциональные возможности
 
-\!\[feature X\]\(images/feature-x.png\)
+Проект CoderPlugin включает три независимых плагина.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 1. Подсчёт строк (Line Counter)
 
-## Requirements
+Плагин предназначен для подсчёта строк в программном коде.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Основная функциональность:
+- Подсчёт количества строк в файле.
+- Получение информации о количестве строк в исходном коде.
 
-## Extension Settings
+![Line Counter](screenshots/line-counter.png)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### 2. Генератор шуток (Joke Generator)
 
-For example:
+Плагин позволяет получать случайные шутки на тему программирования прямо в Visual Studio Code.
 
-This extension contributes the following settings:
+Основная функциональность:
+- Получение случайных шуток через JokeAPI.
+- Поддержка шуток из одной и двух частей.
+- Отображение шуток непосредственно в интерфейсе VS Code.
+- Использование безопасного режима API и фильтрации нежелательного контента.
+- Запуск генератора через команду или кнопку в строке состояния.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+![Joke Generator](screenshots/joke-generator.png)
 
-## Known Issues
+### 3. Викторина по Git (Git Master)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Интерактивная викторина для проверки знаний системы контроля версий Git.
 
-## Release Notes
+Основная функциональность:
+- Запуск викторины через Command Palette.
+- 10 случайных вопросов за одну игру.
+- Четыре варианта ответа на каждый вопрос.
+- Проверка правильности выбранного ответа.
+- Отображение правильного ответа и пояснения.
+- Начисление одного балла за каждый правильный ответ.
+- Отображение итогового результата.
+- Возможность пройти викторину повторно.
 
-Users appreciate release notes as you update your extension.
+![Git Master](screenshots/git-master.png)
 
-### 1.0.0
+## Требования
 
-Initial release of ...
+Для работы с проектом необходимы:
 
-### 1.0.1
+- Visual Studio Code.
+- Node.js.
+- npm.
 
-Fixed issue #.
+## Инструкция по запуску
 
-### 1.1.0
+1. Склонировать репозиторий:
 
-Added features X, Y, and Z.
+   ```bash
+   git clone https://github.com/vwewvw/CoderPlugin.git
+   ```
 
----
+2. Открыть папку проекта в Visual Studio Code.
 
-## Following extension guidelines
+3. Установить необходимые зависимости:
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+   ```bash
+   npm install
+   ```
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+4. Открыть проект в IDE.
 
-## Working with Markdown
+5. Запустить плагин через меню **Run → Run 'Plugin'**. В VS Code для запуска режима отладки также можно использовать клавишу F5.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+6. После запуска откроется новое окно Visual Studio Code (Extension Development Host).
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+7. Для запуска викторины Git Master открыть Command Palette сочетанием `Cmd + Shift + P` и выбрать команду:
 
-## For more information
+   `Git Master: Start Quiz`
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+8. Для запуска генератора шуток использовать команду:
 
-**Enjoy!**
+   `Joke Generator: Tell me a joke`
+
+9. Плагин подсчёта строк запускается согласно предусмотренной для него команде.
+
+## История коммитов
+
+В проекте используются отдельные ветки для разработки функциональных модулей.
+
+| Ветка | Реализуемый модуль |
+|---|---|
+| `feature/line-counter` | Подсчёт строк |
+| `joke_generator` | Генератор шуток |
+| `quiz` | Викторина по Git |
+
+### Вклад участников
+
+Здесь необходимо указать, кто из участников занимался каждым модулем, а также привести соответствующие коммиты.
+
+| Участник | Выполненная работа |
+|---|---|
+| Попова Руслана | Разработка плагина на подсчет строк, создание Kanban-доски, создание презентации |
+| Пермина Мария | Разработка плагина на генератор шуток, разработка плагина "Викторина по Git", создание документации |
+
+Полную историю изменений можно посмотреть в разделе Commits репозитория GitHub.
+
+## История разработки
+
+В данном разделе представлены скриншоты доски проекта на разных этапах работы.
+
+### Начальный этап
+
+![Начало разработки](screenshots/board-start.png)
+
+### Промежуточный этап
+
+![Промежуточный этап разработки](screenshots/board-middle.png)
+
+### Завершение разработки
+
+![Завершение разработки](screenshots/board-final.png)
+
+## Репозиторий проекта
+
+[CoderPlugin — GitHub](https://github.com/vwewvw/CoderPlugin)
