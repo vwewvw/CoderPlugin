@@ -1,7 +1,8 @@
+
 {
   "name": "vibecoderplugin",
-  "displayName": "VibeCoderPlugin",
-  "description": "Programming jokes generator for Visual Studio Code",
+  "displayName": "Git Master",
+  "description": "Git knowledge quiz for Visual Studio Code",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.140.0"
@@ -21,6 +22,11 @@
         "command": "jokeGenerator.getJoke",
         "title": "Joke Generator: Tell me a joke",
         "icon": "$(smiley)"
+      },
+      {
+        "command": "gitMaster.startQuiz",
+        "title": "Git Master: Start Quiz",
+        "icon": "$(git-branch)"
       }
     ]
   },
