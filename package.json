@@ -1,11 +1,10 @@
-
 {
   "name": "vibecoderplugin",
-  "displayName": "Git Master",
-  "description": "Git knowledge quiz for Visual Studio Code",
+  "displayName": "CoderPlugin",
+  "description": "Plugin for lab 3",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.140.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
@@ -14,42 +13,32 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-      {
-        "command": "vibecoderplugin.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "jokeGenerator.getJoke",
-        "title": "Joke Generator: Tell me a joke",
-        "icon": "$(smiley)"
-      },
-      {
-        "command": "gitMaster.startQuiz",
-        "title": "Git Master: Start Quiz",
-        "icon": "$(git-branch)"
-      }
-    ]
+      { "command": "vibecoder.hello", "title": "Hello World", "icon": "$(smiley)" },
+      { "command": "vibecoder.contextAction", "title": "Команда из меню" },
+      { "command": "vibecoder.countLines", "title": "Подсчитать строки", "icon": "$(list-unordered)" },
+      { "command": "jokeGenerator.getJoke", "title": "Случайная шутка", "icon": "$(smiley)" },
+      { "command": "gitMaster.startQuiz", "title": "Викторина по Git", "icon": "$(git-branch)" }
+    ],
+    "menus": {
+      "editor/title": [
+        { "command": "vibecoder.hello", "group": "navigation" },
+        { "command": "vibecoder.countLines", "group": "navigation" },
+        { "command": "jokeGenerator.getJoke", "group": "navigation" },
+        { "command": "gitMaster.startQuiz", "group": "navigation" }
+      ],
+      "editor/context": [
+        { "command": "vibecoder.contextAction", "group": "navigation" }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/vscode": "^1.140.0",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "24.x",
-    "typescript-eslint": "^8.61.1",
-    "eslint": "^10.5.0",
-    "typescript": "^6.0.3",
-    "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0"
-  },
-  "overrides": {
-    "diff": "^8.0.4",
-    "serialize-javascript": "^7.0.6"
+    "@types/vscode": "^1.85.0",
+    "@types/node": "18.x",
+    "typescript": "^5.3.3"
   }
 }
