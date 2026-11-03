@@ -110,14 +110,16 @@
 
 ### Начальный этап
 
+<img width="1280" height="617" alt="IMAGE 2026-11-03 10:09:20" src="https://github.com/user-attachments/assets/fc15e2d8-13b9-49c3-876e-f8f64908dfe9" />
 
 
 ### Промежуточный этап
 
-
+<img width="1280" height="601" alt="IMAGE 2026-11-03 10:09:27" src="https://github.com/user-attachments/assets/5a092f51-6629-4a98-a9e7-23f165cc7aca" />
 
 ### Завершение разработки
 
+<img width="1280" height="586" alt="IMAGE 2026-11-03 10:09:42" src="https://github.com/user-attachments/assets/a6872812-74ca-4a04-86be-eb4c4869b5be" />
 
 
 ## Репозиторий проекта
